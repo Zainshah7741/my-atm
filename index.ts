@@ -23,8 +23,8 @@ if (ansPin.pin === accPin) {
       choices: ["Fast Cash", "Withdraw", "Balance Inquiry"],
     },
   ]);
-/////Nested if else
-//Fast Cash Options
+  /////Nested if else
+  //Fast Cash Options
   if (atmOpt.options === "Fast Cash") {
     let fastAmount = await inquirer.prompt([
       {
@@ -255,7 +255,7 @@ if (ansPin.pin === accPin) {
           "INSUFFICIENT BALANCE!"
         )}\n\n\t\t${chalk.italic.underline("Thank You For Using ATM!")}`
       );
-    }//BALANCE INQUIRY
+    } //BALANCE INQUIRY
   } else if (atmOpt.options === "Balance Inquiry") {
     console.log(
       `\n\t\t   ${chalk.bold.underline(
@@ -269,8 +269,6 @@ if (ansPin.pin === accPin) {
   console.log(
     `\n\t\t\t  ${chalk.bold.underline(
       "ATM"
-    )}\n\n\t\t      ${chalk.bold.red.underline(
-      "INVALID PIN"
-    )}\n\n`
+    )}\n\n\t\t      ${chalk.bold.red.underline("INVALID PIN")}\n\n`
   );
 }
